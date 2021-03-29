@@ -1,0 +1,92 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.colored {
+  color: crimson;
+}
+
+.search-btn {
+  cursor: pointer;
+  padding: 8px;
+  background: rgb(27 26 31 / 48%);
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 4px;
+}
+.search-input {
+  width: 480px;
+  padding: 4px;
+  margin-top: 34px;
+  font-size: 18px;
+}
+
+.search-info {
+  display: none;
+  right: 102px;
+  top: 62px;
+  position: fixed;
+  font-size: 24px;
+  background: rgba(46, 45, 45, 0.589);
+  color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-input {
+    width: 250px;
+  }
+
+  .search-info {
+    right: 5%;
+    top: 90%;
+  }
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.book-content {
+  align-items: left;
+  flex-direction: column;
+  border-bottom: 1px solid #000;
+}
+
+.pagination-container {
+  display: none;
+  align-items: center;
+  max-width: 400px;
+  overflow: auto;
+}
+
+.page-count {
+  cursor: pointer;
+  margin: 4px;
+}
+
+.active-page {
+  color: blue;
+  text-decoration: underline;
+}
+
+.loader-div {
+  position: fixed;
+  top: 13px;
+  left: 1%;
+  width: 355px;
+  height: -14px;
+  background: rgb(27 26 31 / 48%);
+  padding: 6px;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.hide {
+  display: none;
+}
